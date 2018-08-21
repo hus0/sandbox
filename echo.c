@@ -7,6 +7,7 @@ int main(int argc, char *args[])
         printf("Usage: %s STRING\n", args[0]);
         return 1;
     }
+
     printf("%s\n", args[1]);
 
     return 0;
