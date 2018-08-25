@@ -50,7 +50,7 @@ This solution ends up with the following processes on the system.
 ![RT cosmo proposal #2 - process tree](2_rtcosmo_app_mng_tree_proposal2.png)
 
 ### Drawbacks
-- customer must integrate the service unit file to the RT cosmo application
+- customer must integrate the service unit file with the RT cosmo application
 
 ### Impacts
 - the RLX3 starter is completely removed
