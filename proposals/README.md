@@ -4,15 +4,15 @@
 
 The purpose of this document is to create a proposal for the RT cosmo application management /start, stop, restart, etc/.
 
-Find below the current state and the proposals for the RT cosmo application managements.
+Find below the current state and the proposals for the RT cosmo application management.
 
 ## Current state
 
-The RT cosmo application is managed by rlx3-starter as depicted in the figure below.
+The RT cosmo application is managed by ```rlx3-starter``` as depicted in the figure below.
 
 ![RT cosmo current - components](0_rlx3-starter_component_current.png)
 
-Systemd runs RLX3 starter. Afterwards RLX3 starter fires start.sh script which basically starts the RT cosmo application.
+Systemd runs RLX3 starter. Afterwards RLX3 starter fires ```start.sh``` script which basically starts the RT cosmo application.
 
 This solution ends up with the following processes on the system.
 
@@ -25,7 +25,7 @@ This solution ends up with the following processes on the system.
 
 ## Proposal #1 - remove daemonize
 
-The RT cosmo application is managed by rlx3-starter as depicted in the figure below. The only difference is that the daemonize package is not used anymore.
+The RT cosmo application is managed by ```rlx3-starter``` as depicted in the figure below. The only difference is that the ```daemonize``` package is not used anymore.
 
 ![RT cosmo proposal #1 - components](1_rlx3-starter_component_current_without_daemonize.png)
 
@@ -39,7 +39,7 @@ This solution ends up with the following processes on the system.
 
 ## Proposal #2 - remove rlx3-starter
 
-The RT cosmo application is managed directly by systemd as depicted in the figure below.
+The RT cosmo application is managed directly by ```systemd``` as depicted in the figure below.
 
 ![RT cosmo proposal #2 - components](2_rlx3-starter_component_proposal.png)
 
