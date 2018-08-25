@@ -9,7 +9,6 @@ package "OS" {
     component [RT Cosmo app binary] as rtcosmoapp
 }
 
-
 systemd -down-> rlx3starter
 rlx3starter -down-> rtcosmostart
 rtcosmostart -down-> rtcosmoapp
