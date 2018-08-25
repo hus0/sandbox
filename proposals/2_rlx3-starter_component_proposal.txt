@@ -1,0 +1,12 @@
+@startuml
+
+title RLX3 starter - component diagram (proposal)
+
+package "OS" {
+    component [systemd] as systemd
+    component [RT Cosmo app binary] as rtcosmoapp
+}
+
+systemd -down-> rtcosmoapp
+
+@enduml

@@ -1,0 +1,11 @@
+@startsalt
+
+{
+    {T
+     + <PID=1>: systemd
+     ++ <PID=X>: RT cosmo app start.sh
+     +++ <PID=Y>: RT cosmo app binary
+    }
+}
+
+@endsalt

@@ -1,0 +1,10 @@
+[Unit]
+Description=My service
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/opt/srv/run.sh
+
+[Install]
+WantedBy=multi-user.target
