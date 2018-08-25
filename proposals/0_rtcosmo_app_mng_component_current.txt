@@ -3,7 +3,7 @@
 title RT cosmo application (current)
 
 package "OS" {
-    component [systemd\nPID=1] as systemd
+    component [systemd] as systemd
     component [RLX3 starter] as rlx3starter
     component [Daemonize] as daemonize
     component [RT Cosmo app start.sh] as rtcosmostart

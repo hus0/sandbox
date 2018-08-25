@@ -3,7 +3,7 @@
 title RLX3 starter - component diagram (proposal #1)
 
 package "OS" {
-    component [systemd\nPID=1] as systemd
+    component [systemd] as systemd
     component [RLX3 starter] as rlx3starter
     component [RT Cosmo app start.sh] as rtcosmostart
     component [RT Cosmo app binary] as rtcosmoapp
