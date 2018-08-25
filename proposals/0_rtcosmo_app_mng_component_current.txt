@@ -1,6 +1,6 @@
 @startuml
 
-title RLX3 starter - component diagram (current)
+title RT cosmo application (current)
 
 package "OS" {
     component [systemd\nPID=1] as systemd
