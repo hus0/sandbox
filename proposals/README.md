@@ -18,7 +18,7 @@ This solution ends up with the following processes on the system.
 
 ![RT cosmo current - process tree](0_rtcosmo_app_mng_tree_current.png)
 
-***note***: *The RLX3 starter is not in the processes list since the RLX3 starter service unit has Type=```forking``` (hence the RLX3 starter exits as the RT cosmo ```start.sh``` is daemonized).*
+***note***: *The RLX3 starter is not in the processes list since the RLX3 starter service unit has Type=```forking``` (hence the RLX3 starter exits as soon as the RT cosmo ```start.sh``` is daemonized).*
 
 ### Drawbacks
 - daemonize package is required
@@ -27,7 +27,7 @@ This solution ends up with the following processes on the system.
 
 ## Proposal #1 - remove daemonize
 
-The RT cosmo application is controlled by the ```rlx3-starter``` as depicted in the figure below. The difference is that the ```daemonize``` package is not used anymore and.
+The RT cosmo application is controlled by the ```rlx3-starter``` as depicted in the figure below. The difference is that the ```daemonize``` package is not used anymore and the RLX3 starter service unit doesn't have Type=```forking``` (only my assumption).
 
 ![RT cosmo proposal #1 - components](1_rtcosmo_app_mng_component_proposal1.png)
 
