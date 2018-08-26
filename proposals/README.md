@@ -40,6 +40,8 @@ This solution ends up with the following processes on the system.
 
 The RT cosmo application is controlled by the ```rlx3-starter``` as depicted in the figure below. The difference is that the ```daemonize``` package is not used anymore and the RLX3 starter service unit doesn't have Type=```forking``` (only my assumption).
 
+As far as I know, this proposal is the same as the one in the [Kanbanize story](#TODO:).
+
 ![RT cosmo proposal #1 - components](1_rtcosmo_app_mng_component_proposal1.png)
 
 This solution ends up with the following processes on the system.

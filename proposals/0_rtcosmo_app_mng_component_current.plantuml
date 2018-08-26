@@ -1,6 +1,6 @@
 @startuml
 
-title RT cosmo application (current)
+title RT cosmo application control (current)
 
 package "OS" {
     component [systemd] as systemd
