@@ -1,3 +1,15 @@
+- [RT cosmo application control aka RLX3 starter](#rt-cosmo-application-control-aka-rlx3-starter)
+    - [Overview](#overview)
+    - [Current state](#current-state)
+        - [Drawbacks](#drawbacks)
+    - [Proposal #1 - remove daemonize](#proposal-1---remove-daemonize)
+        - [Drawbacks](#drawbacks-1)
+    - [Proposal #2 - remove rlx3-starter](#proposal-2---remove-rlx3-starter)
+        - [Drawbacks](#drawbacks-2)
+        - [Impacts](#impacts)
+    - [Examples](#examples)
+        - [Deployment](#deployment)
+
 # RT cosmo application control aka RLX3 starter
 
 ## Overview
