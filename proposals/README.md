@@ -74,6 +74,10 @@ I've created a dummy echo server in Python [```service_poc/srv.py```](service_po
 There are three different service units which you can use separately.
 
 ### Deployment
+
+You can install service units on your system if you want to check differences in detail.
+Perform the commands below to install, enable and start all three service units on the system.
+
 ```
 sudo mkdir /opt/srv/
 sudo cp service_poc/* /opt/srv/
@@ -91,3 +95,6 @@ sudo systemctl start mysrv_proposal2
 [```mysrv_proposal1```](service_poc/mysrv_proposal1.service) service listens on 0.0.0.0:5554.
 
 [```mysrv_proposal2```](service_poc/mysrv_proposal2.service) service listens on 0.0.0.0:5555.
+
+
+***Note*** *The examples are tested on Debian stretch 64-bit, Python 2.x.*
