@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/opt/srv/srv.py
+/opt/srv/srv.py $*

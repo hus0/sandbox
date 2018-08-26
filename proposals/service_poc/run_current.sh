@@ -1,3 +1,3 @@
 #!/bin/bash
 
-daemonize /opt/srv/start.sh
+daemonize /opt/srv/start.sh $*

@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=forking
-ExecStart=/opt/srv/run_current.sh
+ExecStart=/opt/srv/run_current.sh 0.0.0.0 5553
 
 [Install]
 WantedBy=multi-user.target

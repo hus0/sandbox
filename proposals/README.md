@@ -62,13 +62,17 @@ There are three different service units which you can use separately.
 
 ### Deployment
 ```
-mkdir /opt/srv/
-cp service_poc/* /opt/srv/
-mv /opt/srv/*.service /etc/systemd/system/
-systemctl enable mysrv_current.service
-systemctl enable mysrv_proposal1.service
-systemctl enable mysrv_proposal2.service
-systemctl start mysrv_current
-systemctl start mysrv_proposal1
-systemctl start mysrv_proposal2
+sudo mkdir /opt/srv/
+sudo cp service_poc/* /opt/srv/
+sudo mv /opt/srv/*.service /etc/systemd/system/
+sudo systemctl enable mysrv_current.service
+sudo systemctl enable mysrv_proposal1.service
+sudo systemctl enable mysrv_proposal2.service
+sudo systemctl start mysrv_current
+sudo systemctl start mysrv_proposal1
+sudo systemctl start mysrv_proposal2
 ```
+
+```mysrv_current``` listens on 0.0.0.0:5553
+```mysrv_proposal1``` listens on 0.0.0.0:5554
+```mysrv_proposal2``` listens on 0.0.0.0:5555

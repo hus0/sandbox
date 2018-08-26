@@ -11,8 +11,8 @@ BACKLOG = 5
 def start_srv(ip, port):
     conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     conn.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    conn.bind((IP, PORT))
-    print 'Listening on {0}:{1}'.format(IP, PORT)
+    conn.bind((ip, port))
+    print 'Listening on {0}:{1}'.format(ip, port)
     conn.listen(BACKLOG)
 
     while True:

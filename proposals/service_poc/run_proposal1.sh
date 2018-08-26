@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/opt/srv/start.sh
+/opt/srv/start.sh $*
