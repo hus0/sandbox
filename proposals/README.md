@@ -104,4 +104,4 @@ sudo systemctl start mysrv_proposal2
 ## Questions
 
 1. Which language is the RT cosmo app written in?
-2. Are there any resource restrictions (memory limit, priorities, etc)?
+2. Are there any resource restrictions for the RT cosmo app (memory limit, priorities, etc)?
