@@ -99,3 +99,8 @@ sudo systemctl start mysrv_proposal2
 
 
 ***Note*** *The examples are tested on Debian stretch 64-bit, Python 2.7.x.*
+
+## Questions
+
+1. Which language is the RT cosmo app written in?
+2. Are there any resource restrictions (memory limit, priorities, etc)?
