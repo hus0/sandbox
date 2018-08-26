@@ -73,6 +73,8 @@ sudo systemctl start mysrv_proposal1
 sudo systemctl start mysrv_proposal2
 ```
 
-```mysrv_current``` listens on 0.0.0.0:5553
-```mysrv_proposal1``` listens on 0.0.0.0:5554
-```mysrv_proposal2``` listens on 0.0.0.0:5555
+```mysrv_current``` service listens on 0.0.0.0:5553
+
+```mysrv_proposal1``` service listens on 0.0.0.0:5554
+
+```mysrv_proposal2``` service listens on 0.0.0.0:5555
