@@ -67,7 +67,8 @@ This solution ends up with the following processes on the system.
 
 ### Impacts
 - the RLX3 starter is completely removed
-- ExecStartPre script might be created from scratch
+- systemd Environment file might be created
+- systemd ExecStartPre script might be created from scratch
 
 ## Examples
 I've created a dummy echo server in Python [```service_poc/srv.py```](service_poc/srv.py) to demonstrate described solutions above.
@@ -97,4 +98,4 @@ sudo systemctl start mysrv_proposal2
 [```mysrv_proposal2```](service_poc/mysrv_proposal2.service) service listens on 0.0.0.0:5555.
 
 
-***Note*** *The examples are tested on Debian stretch 64-bit, Python 2.x.*
+***Note*** *The examples are tested on Debian stretch 64-bit, Python 2.7.x.*
