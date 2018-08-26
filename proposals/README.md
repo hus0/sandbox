@@ -29,7 +29,7 @@ This solution ends up with the following processes on the system.
 
 ![RT cosmo current - process tree](0_rtcosmo_app_mng_tree_current.png)
 
-***note***: *The RLX3 starter is not in the processes list since the RLX3 starter service unit has Type=```forking``` (hence the RLX3 starter exits as soon as the RT cosmo ```start.sh``` is daemonized).*
+***Note***: *The RLX3 starter is not in the processes list since the RLX3 starter service unit has Type=```forking``` (hence the RLX3 starter exits as soon as the RT cosmo ```start.sh``` is daemonized).*
 
 ### Drawbacks
 - daemonize package is required
@@ -86,8 +86,8 @@ sudo systemctl start mysrv_proposal1
 sudo systemctl start mysrv_proposal2
 ```
 
-[```mysrv_current```](service_poc/mysrv_current.service) service listens on 0.0.0.0:5553
+[```mysrv_current```](service_poc/mysrv_current.service) service listens on 0.0.0.0:5553.
 
-[```mysrv_proposal1```](service_poc/mysrv_proposal1.service) service listens on 0.0.0.0:5554
+[```mysrv_proposal1```](service_poc/mysrv_proposal1.service) service listens on 0.0.0.0:5554.
 
-[```mysrv_proposal2```](service_poc/mysrv_proposal2.service) service listens on 0.0.0.0:5555
+[```mysrv_proposal2```](service_poc/mysrv_proposal2.service) service listens on 0.0.0.0:5555.
