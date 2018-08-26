@@ -2,7 +2,7 @@
 
 ## Overview
 
-The purpose of this document is to create a proposal for the RT cosmo application control, e.g. start, stop, status.
+The purpose of this document is to describe a proposal for the RT cosmo application control, e.g. start, stop, status.
 
 Find below the current state and the proposals for the RT cosmo application control.
 
@@ -55,3 +55,20 @@ This solution ends up with the following processes on the system.
 ### Impacts
 - the RLX3 starter is completely removed
 - ExecStartPre script might be created from scratch
+
+## Examples
+I've created a dummy echo server in Python [```service_poc/srv.py```](service_poc/srv.py) to demonstrate described solutions above.
+There are three different service units which you can use separately.
+
+### Deployment
+```
+mkdir /opt/srv/
+cp service_poc/* /opt/srv/
+mv /opt/srv/*.service /etc/systemd/system/
+systemctl enable mysrv_current.service
+systemctl enable mysrv_proposal1.service
+systemctl enable mysrv_proposal2.service
+systemctl start mysrv_current
+systemctl start mysrv_proposal1
+systemctl start mysrv_proposal2
+```
